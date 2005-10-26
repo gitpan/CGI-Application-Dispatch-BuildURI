@@ -1,0 +1,11 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/WebApp/Test02.pm
+t/WebApp/Test03.pm
+t/01load.t
+t/02build.t
+t/03move.t
+lib/CGI/Application/Dispatch/BuildURI.pm
+META.yml                                 Module meta-data (added by MakeMaker)
