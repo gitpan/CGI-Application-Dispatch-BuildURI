@@ -12,7 +12,7 @@ our @EXPORT = qw(
 	move_uri
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub import { goto &Exporter::import }
 
@@ -20,8 +20,6 @@ sub build_uri
 {
 	my $self = shift;
 	my %args = @_;
-
-	return if $self->query->path_info =~ m{^/.+/.+$};
 
 	my $location = $self->query->url;
 
@@ -38,6 +36,9 @@ sub build_uri
 sub move_uri
 {
 	my $self = shift;
+
+	return if $self->query->path_info =~ m{^/.+/.+$};
+
 	my $location = $self->build_uri();
 	CGI::Application::Plugin::Redirect::redirect($self, $location);
 }

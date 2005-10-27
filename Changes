@@ -1,5 +1,8 @@
 Revision history for Perl extension CGI::Application::Dispatch::BuildURI.
 
+0.02  Thu Oct 27 21:08:30 2005
+	- fixed move_uri() method
+
 0.01  Tue Oct 11 16:20:53 2005
 	- original version; created by h2xs 1.23 with options
 		-AXn CGI::Application::Dispatch::BuildURI

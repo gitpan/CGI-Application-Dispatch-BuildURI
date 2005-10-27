@@ -1,4 +1,4 @@
-CGI-Application-Dispatch-BuildURI version 0.01
+CGI-Application-Dispatch-BuildURI version 0.02
 
 Build URI including full path_info in CGI::Application::Dispatch
 

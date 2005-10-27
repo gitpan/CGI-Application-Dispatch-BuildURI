@@ -5,6 +5,7 @@ WriteMakefile(
     NAME              => 'CGI::Application::Dispatch::BuildURI',
     VERSION_FROM      => 'lib/CGI/Application/Dispatch/BuildURI.pm', # finds $VERSION
     PREREQ_PM         => {
+		'CGI::Application::Dispatch' => 0,
 		'CGI::Application::Plugin::Redirect' => 0,
 	}, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
